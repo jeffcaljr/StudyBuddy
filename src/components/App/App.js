@@ -7,8 +7,6 @@ class App extends Component {
   render() {
     return (
         <div>
-            <img src="../../logo.png" className="img-fluid" alt="Responsive"/>
-
             <BrowserRouter>
                 <Routes/>
             </BrowserRouter>
