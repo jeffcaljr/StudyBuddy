@@ -12,10 +12,11 @@ class Login extends Component{
                 <div className=" row vertical-center-row">
                     <h2 className="text-center">Sign In</h2>
                     <CredentialInput/>
+                    <button className="btn btn-primary text-white text-center sign-in-button">Sign In</button>
                     <p className="text-center">or</p>
                     <FBLoginButton/>
 
-                    <div className="text-right login-link-container"><Link to="/"><span className="login-link text-muted">Don't have an account? Register!</span></Link></div>
+                    <div className="text-right login-link-container"><Link to="/register"><span className="login-link text-muted">Don't have an account? Register!</span></Link></div>
                 </div>
             </div>
         );

@@ -7,3 +7,10 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.ui-card{
+  background: #EEEEEE;
+  padding: 8px;
+  box-shadow: 4px 4px 5px #757575;
+  padding: 3% 3% 1% 3%;
+}
