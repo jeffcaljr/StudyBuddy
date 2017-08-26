@@ -1,22 +1,30 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import ReactDOM from 'react-dom';
 import './Login.css';
+import Main from "../Main/Main";
 
 
 class Login extends Component{
-    render(){
 
+    loadApp(){
+        ReactDOM.render(<Main/>, document.getElementById('root'));
+    }
+
+    render(){
         return(
 
             <div className="login-container container container-table ui-card">
                 <div className=" row vertical-center-row">
                     <h2 className="text-center">Sign In</h2>
                     <CredentialInput/>
-                    <button className="btn btn-primary text-white text-center sign-in-button">Sign In</button>
+                    <div className="btn-container text-center">
+                        <button className="btn btn-primary text-white sign-in-button" onClick={() => this.loadApp()}>Sign In</button>
+                    </div>
                     <p className="text-center">or</p>
                     <FBLoginButton/>
 
-                    <div className="text-right login-link-container"><Link to="/register"><span className="login-link text-muted">Don't have an account? Register!</span></Link></div>
+                    <div className="text-right register-link-container"><Link to="/register"><span className="register-link text-muted">Don't have an account? Register!</span></Link></div>
                 </div>
             </div>
         );
@@ -24,6 +32,8 @@ class Login extends Component{
 }
 
 class CredentialInput extends Component{
+
+
     
     render(){
         
@@ -57,5 +67,7 @@ class FBLoginButton extends Component{
         );
     }
 }
+
+
 
 export default  Login;

@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import './Content.css'
+import logo from "../../sb_logo.png";
 
 class Content extends Component{
     render(){
         return(
-            <div className="col-md-9 col-lg-10 col-xl-11">
+            <div className="col-md-9 col-lg-10 content-container">
+                <div className="logo-container text-center">
+                    <img className="logo" src={logo} alt="StudyBuddy"/>
+                </div>
                 <h1>Bootstrap 4.0 Vertical Nav Example</h1>
 
                 <hr />

@@ -45,7 +45,10 @@ class CredentialRegistration extends Component{
                     </div>
                 </div>
 
-                <button className="btn btn-primary text-white">Register</button>
+                <div className="btn-container text-center">
+                    <button className="btn btn-primary text-white">Register</button>
+                </div>
+
             </div>
         );
     }

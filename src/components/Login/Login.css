@@ -1,7 +1,7 @@
 
 .login-container{
     width: 50%;
-    margin: 25%;
+    margin: 5% auto;
 
 }
 
@@ -17,11 +17,11 @@
     vertical-align: middle;
 }
 
-.login-link-container{
+.register-link-container{
     margin-top: 16px;
 }
 
-.login-link{
+.register-link{
     font-size: 0.7em;
 }
 
@@ -42,7 +42,6 @@
     margin-bottom: 16px;
 }
 
-/*.email-input > input{*/
-    /*width: 300px;*/
-    /*background: red;*/
-/*}*/
+.btn-container{
+    margin: 16px auto;
+}

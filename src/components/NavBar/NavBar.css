@@ -1,1 +1,58 @@
-im[prt]
+
+.bootstrap-vertical-nav{
+    background: #37474F;
+    padding: 0;
+}
+
+.navbar-container{
+    padding:  0;
+    margin-top: 0;
+}
+
+.nav .nav-link{
+    font-size: 0.85em;
+}
+
+.logout-button-container{
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+.logout-button-container .btn{
+    width: 100%;
+
+}
+
+@media (min-width: 768px) {
+    .bootstrap-vertical-nav .collapse {
+        display: block;
+        height: 100vh;
+    }
+}
+
+.fa{
+    color: white;
+    margin: 8px;
+}
+
+
+.fa-gear:hover{
+    color: #757575;
+}
+.user-photo-container{
+    margin: 16px 0px;
+}
+
+.user-photo-image{
+    width: 80%;
+
+}
+
+.edit-profile-link-text{
+    font-size: 0.6em;
+    text-decoration: underline;
+}
+
+
+
