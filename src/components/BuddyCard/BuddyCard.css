@@ -1,0 +1,19 @@
+.buddy-card-root{
+    width: 50%;
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+.user-photo{
+    width: 100%;
+}
+
+.card-block{
+    word-wrap: break-word;
+}
+
+.buddy-card-root .fa{
+    color: #616161;
+}
+
