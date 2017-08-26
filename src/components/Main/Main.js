@@ -6,7 +6,7 @@ import './Main.css';
 class Main extends  Component{
     render(){
         return(
-            <div className="container-fluid root">
+            <div className="root">
                 <div className="row">
                     <NavBar/>
                     <Content/>

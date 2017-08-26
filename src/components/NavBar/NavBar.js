@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+
 import './NavBar.css'
+import UserPhoto from "./UserPhoto";
+import LogoutButton from "./LogoutButton";
 
 class NavBar extends Component{
     render(){
@@ -49,38 +51,6 @@ class NavBar extends Component{
     }
 }
 
-class LogoutButton extends Component{
-    render(){
-        return(
-            <div className="logout-button-container">
-                <button className="btn btn-danger text-white">Logout</button>
-            </div>
-        );
-    }
-}
-
-class UserPhoto extends Component{
-
-    user = {
-        photo: "https://randomuser.me/api/portraits/men/83.jpg",
-        name: "Ramon"
-    }
-
-    render(){
-
-        return(
-            <div className="user-photo-container">
-                <figure >
-                    <div className="user-photo text-center">
-                        <img src={this.user.photo} alt={this.user.name}className="user-photo-image img-fluid figure-img rounded-circle"/>
-                    </div>
-                    <Link to="/editProfile"><div className="text-center text-white edit-profile-link-text"><i className="fa fa-pencil" aria-hidden="true"></i>Edit Profile</div></Link>
-                    <figcaption className="user-photo-greeting figure-caption text-center text-white">{"Welcome, " + this.user.name + "!"}</figcaption>
-                </figure>
-            </div>
-        );
-    }
-}
 
 
 export default NavBar;

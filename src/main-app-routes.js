@@ -3,11 +3,12 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Login from "./Login/Login";
 import RegistrationBox from "./Registration/Registration";
 import Main from './Main/Main';
+import MainRouter from "./components/Main/MainRouter";
 
 const Routes = () => (
     <Switch>
         <Route exact path="/" component={MainRouter}></Route>
-        <Route path="/register" component={RegistrationBox}></Route>
+        <Route path="/login" component={Login}></Route>
         <Route path="/main" component={Main}></Route>
         <Route path="/editProfile" component={Login}/>
         <Route path="*" component={RouterError}></Route>
