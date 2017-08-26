@@ -1,0 +1,17 @@
+.profile-root{
+    margin: 0 auto;
+}
+
+.profile-root .fa{
+    color: #616161;
+
+}
+
+
+.profile-photo{
+    width: 80%;
+}
+
+.profile-info{
+    padding: 10%;
+}

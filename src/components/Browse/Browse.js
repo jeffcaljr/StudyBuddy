@@ -3,6 +3,7 @@ import BuddyCard from "../BuddyCard/BuddyCard";
 import './Browse.css';
 import RejectButton from "../BuddyCard/RejectButton";
 import AcceptButton from "../BuddyCard/AcceptButton";
+import Profile from "../Profile/Profile";
 
 let user = {
     gender: "male",
@@ -43,7 +44,7 @@ class Browse extends Component{
     render(){
         return (
             <div className="browse-root">
-                <BuddyCard user={user}/>
+                <Profile user={user}/>
 
                 <div className="discover-card-buttons text-center">
                     <RejectButton/>
