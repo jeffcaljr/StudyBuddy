@@ -11,15 +11,19 @@ class NavBar extends Component{
 
 
                 <div className="bootstrap-vertical-nav">
-                    <div className="text-right"><i className="fa fa-gear" aria-hidden="true"></i></div>
 
-                    <UserPhoto/>
+
+
 
                     <button className="btn btn-primary hidden-md-up" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         <span className="">Menu</span>
                     </button>
 
                     <div className="collapse" id="collapseExample">
+                        <div className="text-right"><i className="fa fa-gear" aria-hidden="true"></i></div>
+
+                        <UserPhoto/>
+
                         <ul className="nav nav-pills flex-column" id="exCollapsingNavbar3">
                             <li className="nav-item">
                                 <a className="nav-link active" href="#">

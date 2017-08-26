@@ -54,5 +54,12 @@
     text-decoration: underline;
 }
 
+@media (max-width: 768px) {
+    .user-photo-container{
+        width: 25%;
+        margin: 0 auto;
+    }
+}
+
 
 
