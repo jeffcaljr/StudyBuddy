@@ -7,18 +7,20 @@ import {VIEWS} from "../Main/Main";
 import RouterError from "../RouterError";
 import Matches from "../Matches/Matches";
 import user from '../../models/User'
+import Conversations from "../Conversations/Conversations";
 
 let Content = (props) => {
 
 
     let renderedComponent;
 
+
     switch(props.view){
         case VIEWS.browse:
             renderedComponent = <Browse/>
             break;
         case VIEWS.conversations:
-            renderedComponent = <RouterError/>
+            renderedComponent = <Conversations/>
             break;
         case VIEWS.matches:
             renderedComponent = <Matches user={user}/>

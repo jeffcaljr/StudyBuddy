@@ -18,7 +18,7 @@ let NavBar = (props) => {
 
 
                     <button className="btn btn-primary hidden-md-up" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        <span className="">Menu</span>
+                        <span className=""><i className="fa fa-bars" aria-hidden="true"></i></span>
                     </button>
 
                     <div className="collapse" id="collapseExample">
@@ -34,7 +34,6 @@ let NavBar = (props) => {
 
                         <LogoutButton/>
                     </div>
-
 
                 </div>
 

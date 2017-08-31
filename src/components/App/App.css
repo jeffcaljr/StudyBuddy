@@ -23,6 +23,23 @@
   width: 80%;
 }
 
+.conversation-container{
+  margin: 0.5rem auto;
+  background: #EEEEEE;
+  padding: 1rem;
+  box-shadow: 1px 1px 4px #3F3F3F;
+}
+
+.conversation-image{
+  width: 100%;
+  text-align: center;
+}
+
+.conversation-image .img{
+  width: 50%;
+
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
