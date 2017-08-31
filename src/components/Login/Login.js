@@ -11,7 +11,7 @@ import logo from '../../sb_logo.png';
 class Login extends Component{
 
     loadApp(){
-        ReactDOM.render(<Main/>, document.getElementById('root'));
+        // ReactDOM.render(<Main/>, document.getElementById('root'));
     }
 
     render(){
@@ -27,7 +27,10 @@ class Login extends Component{
                         <h2 className="text-center">Sign In</h2>
                         <CredentialInput/>
                         <div className="btn-container text-center">
-                            <button className="btn btn-primary text-white sign-in-button" onClick={() => this.loadApp()}>Sign In</button>
+                            <Link to="/">
+                                <button className="btn btn-primary text-white sign-in-button" onClick={() => this.loadApp()}>Sign In</button>
+                            </Link>
+
                         </div>
                         <p className="text-center">or</p>
                         <FBLoginButton/>

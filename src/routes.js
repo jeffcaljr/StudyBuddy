@@ -8,7 +8,8 @@ import MainRouter from "./components/Main/MainRouter";
 
 const Routes = () => (
     <Switch>
-        <Route exact path="/" component={MainRouter}></Route><Route path="/register" component={RegistrationBox}></Route>
+        <Route exact path="/" component={MainRouter}></Route>
+            <Route path="/register" component={RegistrationBox}></Route>
         <Route path="/login" component={Login}></Route>
         <Route path="/main" component={Main}></Route>
         <Route path="/editProfile" component={Login}/>

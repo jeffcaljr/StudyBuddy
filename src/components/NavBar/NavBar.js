@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import './NavBar.css'
 import UserPhoto from "./UserPhoto";
 import LogoutButton from "./LogoutButton";
+import {VIEWS} from "../Main/Main";
+import NavLinkItem from "./NavLinkItem";
 
-class NavBar extends Component{
-    render(){
+let NavBar = (props) => {
         return(
             <div className="col-md-3 col-lg-2 navbar-container">
 
@@ -25,23 +27,11 @@ class NavBar extends Component{
                         <UserPhoto/>
 
                         <ul className="nav nav-pills flex-column" id="exCollapsingNavbar3">
-                            <li className="nav-item">
-                                <a className="nav-link active" href="#">
-                                    <i className="fa fa-globe" aria-hidden="true"></i> Browse</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-white" href="#">
-                                    <i className="fa fa-users" aria-hidden="true"></i>Matches</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-white" href="#">
-                                    <i className="fa fa-comment" aria-hidden="true"></i>Conversations</a>
-                            </li>
-                            {/*<li className="nav-item">*/}
-                                {/*<a className="nav-link text-white" href="#">*/}
-                                    {/*<i className="fa fa-gear" aria-hidden="true"></i>Disabled</a>*/}
-                            {/*</li>*/}
+                            <NavLinkItem faIcon="fa-globe" active={props.activeLink === VIEWS.browse} view={VIEWS.browse} text="Browse" setView={(view) => props.setView(view)}/>
+                            <NavLinkItem faIcon="fa-users" active={props.activeLink === VIEWS.matches} view={VIEWS.matches} text="Matches" setView={(view) => props.setView(view)}/>
+                            <NavLinkItem faIcon="fa-comment" active={props.activeLink === VIEWS.conversations} view={VIEWS.conversations} text="Conversations" setView={(view) => props.setView(view)}/>
                         </ul>
+
                         <LogoutButton/>
                     </div>
 
@@ -52,9 +42,11 @@ class NavBar extends Component{
 
             </div>
         );
-    }
 }
 
-
+NavBar.propTypes = {
+    activeLink: PropTypes.string.isRequired,
+    setView: PropTypes.func.isRequired
+}
 
 export default NavBar;
