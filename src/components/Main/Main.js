@@ -6,7 +6,9 @@ import './Main.css';
 export const VIEWS = {
     browse: 'browse',
     matches: 'matches',
-    conversations: 'conversations'
+    conversations: 'conversations',
+    profile: 'profile',
+    editProfile: 'editProfile'
 
 }
 

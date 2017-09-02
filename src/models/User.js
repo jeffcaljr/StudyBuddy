@@ -1,14 +1,14 @@
 let user = {
-    gender: "male",
+    gender: "Male",
     name: {
-        "first": "Roman",
+        "first": "Ramon",
         "last": "Wilkerson"
     },
     location: {
         street: "1861 jan pieterszoon coenstraat",
         city: "Boston",
         state: "Massachusetts",
-        postcode: 69217
+        postcode: 69218
     },
     email: "romain.hoogmoed@example.com",
     age: 34,

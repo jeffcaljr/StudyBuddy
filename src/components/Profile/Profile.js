@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types'
 import './Profile.css';
 
-class Profile extends Component{
-    render(){
+let Profile = (props) => {
 
         return (
             <div className="profile-root">
@@ -13,18 +13,21 @@ class Profile extends Component{
                     </div>
                 </div>
                 <div className="profile-photo-container text-center">
-                    <img className="profile-photo"  src={this.props.user.photo} alt={this.props.user.name.first}/>
+                    <img className="profile-photo"  src={props.user.photo} alt={props.user.name.first}/>
                 </div>
                 <div className="profile-info">
-                    <h3 className="profile-name">{this.props.user.name.first + " " + this.props.user.name.last}</h3>
-                    <div className="profile-age">{this.props.user.age}</div>
-                    <div className="profile-location">{this.props.user.location.city + ", " + this.props.user.location.state}</div>
-                    <div className="profile-skills">{this.props.user.skills.join(", ")}</div>
-                    <div className="profile-bio">{this.props.user.bio}</div>
+                    <h3 className="profile-name">{props.user.name.first + " " + props.user.name.last}</h3>
+                    <div className="profile-age">{props.user.age}</div>
+                    <div className="profile-location">{props.user.location.city + ", " + props.user.location.state}</div>
+                    <div className="profile-skills">{props.user.skills.join(", ")}</div>
+                    <div className="profile-bio">{props.user.bio}</div>
                 </div>
             </div>
         );
-    }
+}
+
+Profile.propTypes = {
+    user: PropTypes.object.isRequired
 }
 
 

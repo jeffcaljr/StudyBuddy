@@ -8,6 +8,8 @@ import RouterError from "../RouterError";
 import Matches from "../Matches/Matches";
 import user from '../../models/User'
 import Conversations from "../Conversations/Conversations";
+import Profile from "../Profile/Profile";
+import EditProfile from "../EditProfile/EditProfile"
 
 let Content = (props) => {
 
@@ -24,6 +26,12 @@ let Content = (props) => {
             break;
         case VIEWS.matches:
             renderedComponent = <Matches user={user}/>
+            break;
+        case VIEWS.profile:
+            renderedComponent = <Profile user={user}/>
+            break;
+        case VIEWS.editProfile:
+            renderedComponent = <EditProfile user={user}/>
             break;
         default:
             renderedComponent = <RouterError/>

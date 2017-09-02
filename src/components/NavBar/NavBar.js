@@ -24,7 +24,7 @@ let NavBar = (props) => {
                     <div className="collapse" id="collapseExample">
                         <div className="text-right"><i className="fa fa-gear" aria-hidden="true"></i></div>
 
-                        <UserPhoto/>
+                        <UserPhoto view={VIEWS.editProfile} setView={(view) => props.setView(view)}/>
 
                         <ul className="nav nav-pills flex-column" id="exCollapsingNavbar3">
                             <NavLinkItem faIcon="fa-globe" active={props.activeLink === VIEWS.browse} view={VIEWS.browse} text="Browse" setView={(view) => props.setView(view)}/>
